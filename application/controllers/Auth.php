@@ -30,7 +30,7 @@ class Auth extends Application{
 	    $this->session->set_userdata('username',$user->name);
 	    $this->session->set_userdata('userRole',$user->role);
 	}
-	redirecr('/');
+	redirect('/');
     }
     
     function logout(){
